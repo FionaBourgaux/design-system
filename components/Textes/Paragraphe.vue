@@ -1,5 +1,5 @@
 <template>
-  <p class="text-gray-400 text-base">
+  <p class="text-[#F9F5F6] font-sans">
     <slot />
   </p>
 </template>

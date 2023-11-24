@@ -1,7 +1,7 @@
 
 <template>
   <button
-    class="bg-white text-gray-900 font-bold py-2 px-4 border-2 border-black ring-2 ring-gray-200/75 hover:text-white hover:bg-white/50 hover:ring-gray-50/80 transition"
+    class="rounded-lg bg-[#ED5AB3] text-white font-serif font-bold py-2 px-4 ring-2 ring-white hover:text-[#ED5AB3] hover:bg-white "
   >
     <slot />
   </button>

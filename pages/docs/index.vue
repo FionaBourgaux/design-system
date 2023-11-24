@@ -17,7 +17,7 @@ definePageMeta({
         <CardsIconCard to="/docs/composants">
           <template #icon>
             <i
-              class="ri-list-indefinite text-green-500 group-hover:text-green-700"
+              class="ri-ghost-smile-line text-[#001B79] group-hover:text-[#FF55BB]"
             ></i>
           </template>
           Composants
@@ -28,7 +28,7 @@ definePageMeta({
         <CardsIconCard to="/docs/layouts">
           <template #icon>
             <i
-              class="ri-layout-line text-blue-500 group-hover:text-blue-700"
+              class="ri-aliens-line text-[#001B79] group-hover:text-[#FF55BB]"
             ></i>
           </template>
           Layouts
@@ -38,7 +38,7 @@ definePageMeta({
       <li>
         <CardsIconCard to="/docs/icones">
           <template #icon>
-            <i class="ri-heart-line text-red-500 group-hover:text-red-700"></i>
+            <i class="ri-bear-smile-line text-[#001B79] group-hover:text-[#FF55BB]"></i>
           </template>
           Icones
         </CardsIconCard>

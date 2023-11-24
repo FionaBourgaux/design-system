@@ -53,7 +53,7 @@ definePageMeta({
         <CardsIconCard to="/docs/composants">
           <template #icon>
             <i
-              class="ri-list-indefinite text-green-500 group-hover:text-green-700"
+              class="ri-list-indefinite text-[#FF55BB] group-hover:text-[#FF55BB]"
             ></i>
           </template>
           Composants

@@ -10,14 +10,14 @@ defineProps({
 <template>
   <NuxtLink
     :to="to"
-    class="flex flex-col p-4 group hover:bg-gray-200/75 transition items-center justify-center ring-2 ring-gray-200/75 my-8 space-y-2"
+    class="shadow-xl shadow-[#001B79]/50 bg-[#FF90C2] rounded-lg flex flex-col p-4 group hover:bg-gradient-to-r from-[#FF90C2] via-[#FDCEDF] to-[#FDCEDF] hover:transition-all transition items-center justify-center my-8 space-y-2 hover:scale-105"
   >
     <div class="text-5xl text-gray-400 group-hover:text-gray-800 transition">
       <slot name="icon" />
     </div>
 
     <div
-      class="text-xl text-gray-100 group-hover:text-black group-hover:underline transition"
+      class="text-xl font-sans text-white group-hover:text-white"
     >
       <slot />
     </div>

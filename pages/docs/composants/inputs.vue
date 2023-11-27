@@ -1,5 +1,12 @@
 <script setup>
-import { form, inputText, inputTextWithError, textarea } from "./code/inputs";
+import {
+  form,
+  inputText,
+  inputNombre,
+  inputTextWithError,
+  textarea,
+  inputEmail,
+} from "./code/inputs";
 
 definePageMeta({
   layout: "docs",
@@ -8,6 +15,8 @@ definePageMeta({
 const nom = ref("");
 const prenom = ref("");
 const description = ref("");
+const nombre = ref(0);
+const email = ref("");
 </script>
 
 <template>
@@ -26,8 +35,33 @@ const description = ref("");
     </InputsGroup>
 
     <div class="mt-1">Valeur du champs: "{{ nom }}"</div>
-
     <TextesCode :code="inputText" />
+
+    <TitresH2>Input de nombre</TitresH2>
+
+    <InputsGroup class="max-w-xs">
+      <InputsLabel name="nombre">Nombre</InputsLabel>
+      <InputsNombre
+        v-model="nombre"
+        name="nombre"
+        placeholder="Votre âge"
+        :min="0"
+        :max="135"
+      />
+    </InputsGroup>
+
+    <div class="mt-1">Valeur du champs: "{{ nombre }}"</div>
+    <TextesCode :code="inputNombre" />
+
+    <TitresH2>Input de Email</TitresH2>
+
+    <InputsGroup class="max-w-xs">
+      <InputsLabel name="email">Email</InputsLabel>
+      <InputsEmail v-model="email" name="email" placeholder="Votre email" />
+    </InputsGroup>
+
+    <div class="mt-1">Valeur du champs: "{{ email }}"</div>
+    <TextesCode :code="inputEmail" />
 
     <TitresH2>Input de texte avec erreur</TitresH2>
 

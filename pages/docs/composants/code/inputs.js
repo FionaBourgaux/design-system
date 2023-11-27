@@ -3,6 +3,16 @@ export const inputText = `<InputsGroup class="max-w-xs">
     <InputsTexte name="nom" placeholder="Votre nom" />
 </InputsGroup>`;
 
+export const inputNombre = ` <InputsGroup class="max-w-xs">
+      <InputsLabel name="nombre">Nombre</InputsLabel>
+      <InputsTexte v-model="nombre" name="nombre" placeholder="Votre âge" min="0" max="135"/>
+    </InputsGroup>`;
+
+    export const inputEmail = `<InputsGroup class="max-w-xs">
+    <InputsLabel name="email">Email</InputsLabel>
+    <InputsEmail name="email" placeholder="Votre Email" />
+</InputsGroup>`;
+
 export const inputTextWithError = `<InputsGroup class="max-w-xs">
     <InputsLabel name="nom">Nom</InputsLabel>
     <InputsTexte name="nom" placeholder="Votre nom" />
